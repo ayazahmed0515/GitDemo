@@ -14,7 +14,7 @@ public class CaptureToolTipText {
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver",
-				"/Users/ahmad/OneDrive/Documents/Browsers/chromedriver-win64/chromedriver.exe");
+				"C:/Users/ahmad/OneDrive/Documents/Browsers/chromedriver-win64/chromedriver.exe");
 				
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://userguiding.com/blog/tooltip-examples-best-practices/");
@@ -26,6 +26,10 @@ public class CaptureToolTipText {
 		a.moveToElement(button);
 		String ToolTipText=button.getAttribute("title");
 		System.out.println(ToolTipText);
+		System.out.println(ToolTipText1);
+		System.out.println(ToolTipText2);
+		System.out.println(ToolTipText3);
+		
 		//System.out.println("Hello1");
 		driver.quit();
 		
